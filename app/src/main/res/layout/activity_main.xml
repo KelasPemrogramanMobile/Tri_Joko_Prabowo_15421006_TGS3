@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.bowotmf.tugas3.MainActivity">
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/isiNama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Masukan Nama Lengkap"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/isiAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Masukan Alamat"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/isiTtl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Masukan Tanggal Lahir"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/isiPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Masukan Password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agama"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/sp_name"
+            android:entries="@array/arAgama"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textSize="15sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:id="@+id/radioGrupNb">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"/>
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnambildata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:text="DAFTAR"
+            android:textColor="@android:color/background_light" />
+
+
+    </LinearLayout>
+</RelativeLayout>
